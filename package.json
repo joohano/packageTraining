@@ -1,0 +1,7 @@
+{
+  "name": "training",
+  "repository": "https://github.com/joohano/packageTraining.git",
+  "roots": [
+    "sample-packages/npm"
+  ]
+}
