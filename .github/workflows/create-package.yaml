@@ -10,8 +10,8 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 12
-      - run: npm ci --workspace ./sample-packages/npm
-      - run: npm test --workspace ./sample-packages/npm
+      - run: npm ci --prefix ./sample-packages/npm
+      - run: npm test --prefix ./sample-packages/npm
 
   publish-gpr:
     needs: build
