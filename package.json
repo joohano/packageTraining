@@ -3,5 +3,6 @@
   "repository": "https://github.com/joohano/packageTraining.git",
   "roots": [
     "sample-packages/npm"
-  ]
+  ],
+  "version": "0.0.1"
 }
