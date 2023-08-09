@@ -1,3 +1,4 @@
 {
-  "your": "json config here"
+  "name": "training",
+  "repository": "https://github.com/joohano/packageTraining.git"
 }
