@@ -10,8 +10,8 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 12
-      - run: npm ci --prefix ./sample-packages/npm
-      - run: npm test --prefix ./sample-packages/npm
+      - run: npm ci
+      - run: npm test
 
   publish-gpr:
     needs: build
@@ -22,7 +22,7 @@ jobs:
         with:
           node-version: 12
           registry-url: https://npm.pkg.github.com/
-      - run: npm ci --prefix ./sample-packages/npm
-      - run: npm publish --prefix ./sample-packages/npm
+      - run: npm ci
+      - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
